@@ -4,3 +4,6 @@ def calculate_tax(earning):
     
     elif earning < 0:
         raise ValueError("Earnings cannot be negative")
+    
+    elif earning <= 12000:
+        return 0
