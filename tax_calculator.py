@@ -7,3 +7,6 @@ def calculate_tax(earning):
     
     elif earning <= 12000:
         return 0
+    
+    elif earning <= 36000:
+        return (earning - 12000) * 0.2
