@@ -7,6 +7,7 @@ def test_calculate_tax():
     assert calculate_tax(12000) == 0
     assert calculate_tax(20000) == 1600
     assert calculate_tax(36000) == 4800
+    assert calculate_tax(40000) == 6400
 
 def test_negative_earnings():
     with pytest.raises(ValueError, match="Earnings cannot be negative"):
